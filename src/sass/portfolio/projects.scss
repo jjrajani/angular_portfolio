@@ -1,0 +1,134 @@
+div#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  .project {
+    font-family: $font;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px 0;
+    background-color: rgba(100,100,100,0.7);
+    &:first-child {
+      margin-top: 0;
+    }
+    &:hover {
+      box-shadow: 5px 5px 10px rgba(225, 225, 225, 0.3),
+                  -5px 5px 10px rgba(225, 225, 225, 0.3),
+                  5px -5px 10px rgba(225, 225, 225, 0.3),
+                  -5px -5px 10px rgba(225, 225, 225, 0.3);
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(87, 87, 87, 1);
+      margin: 20px auto;
+      padding: 20px 5%;
+      border-top: solid 1px orange;
+      border-bottom: solid 1px orange;
+    }
+    img {
+      width: 35%;
+      max-width: 225px;
+      margin: 0 2.5%;
+      border-radius: 4px;
+    }
+    
+    .spec{
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2.5%;
+      h5 {
+        margin: 0;
+        font-size: 1.7em;
+        &.yellow {
+          color: yellow;
+          text-shadow: 2px 2px 3px blue,
+                       -2px 2px 3px blue,
+                       2px -2px 3px blue,
+                       -2px -2px 3px blue,
+                       1px 1px 3px blue,
+                       -1px 1px 3px blue,
+                       1px -1px 3px blue,
+                       -1px -1px 3px blue;
+        }
+        &.pineapple {
+          color: #22ff55;
+          box-shadow: 0 8px 5px rgba(252, 244, 10, 0.7);
+          border-radius: 100%;
+        }
+      }
+      span {
+        margin: 0;
+      }
+      .green {
+        color: #48BD02;
+      }
+      .orange {
+        color: #EF9A00;
+      }
+      p {
+        color: #DCEFF5;
+        font-size: 0.8em;
+        letter-spacing: 0.08em;
+        text-align: center;
+        font-weight: 300;
+      }
+      i {
+        font-size: 2em;
+        color: yellow;
+        padding: 5px;
+        margin: 5px;
+      }
+    }
+    .smash {
+        max-width: 300px;
+    }
+  }
+}
+
+.slowFade {
+  animation-duration: 8s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeProjects {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fastFade {
+  animation-name: none;
+  animation-duration: 0s;
+}

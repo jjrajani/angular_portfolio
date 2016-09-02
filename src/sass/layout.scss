@@ -1,0 +1,115 @@
+@import 'portfolio/font';
+
+header {
+  background-color: rgba(87, 87, 87, 1);
+  margin: 0px;
+  height: 50px;
+  padding: 8px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px #11aabb;
+  animation-duration: 3s;
+  animation-name: headerSlide;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: $font;
+}
+
+
+span {
+  font-family: $font;
+  margin: 0 3px;
+  &.six {
+    margin: 0 4px 0 20px;
+  }
+  // &.one, &.two, &.three, &.four, &.five,
+  // &.six, &.seven, &.eight, &.nine, &.ten,
+  // &.eleven 
+}
+
+@keyframes headerSlide {
+  0% {
+    margin: 300px 0;
+    padding: 0 40% 0 0;
+    justify-content: space-between;
+    height: 300px;
+    opacity: 0;
+  }
+  20% {
+    margin: 300px 0;
+    padding: 0 40% 0 0;
+    justify-content: space-between;
+    height: 300px;
+    opacity: 1;
+  }
+  100% {
+   margin: 0px;
+   height: 50px;
+   padding: 8px 5%;
+  }
+}
+
+.title {
+  font-family: $font;
+  margin: 0;
+  color: white;
+  animation-iteration-count: infinte;
+  animation-duration: 5s;
+  animation-name: titleslide;
+  position: absolute;
+  border-bottom: solid orange 1px;
+  top: 16px;
+  left: 5%;
+}
+
+@keyframes titleslide {
+  0% {
+    color: rgba(87, 87, 87, 1);
+    visibility: hidden;
+    top: 16px;
+    left: -150px;
+  }
+  60% {
+    color: rgba(87, 87, 87, 1);
+    visibility: hidden;
+    top: 16px;
+    left: -150px;
+    border-bottom: solid orange 1px;
+  }
+  100% {
+    color: white;
+    visibility: visible;
+  }
+
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(77, 77, 77, 1);
+  font-family: $font;
+  // position: absolute;
+  // bottom: -60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  
+  p {
+    color: rgba(225, 225, 225, 0.7);
+    .humdrum {
+      color: orange;
+    }
+    .magnanimous {
+      color: #11aabb;
+    }
+    .name {
+      color: white;
+    }
+  }
+}

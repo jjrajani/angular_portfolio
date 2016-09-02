@@ -1,0 +1,78 @@
+@import 'layout';
+@import 'portfolio/main.scss';
+
+* {
+  box-sizing: border-box;
+  -wibkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #11aabb;
+  animation-duration: 6s;
+  animation-name: backgroundFade;
+}
+
+@keyframes backgroundFade {
+  0% {
+    background-color: #fff;
+  }
+  
+  100% {
+    background-color: #11aabb;
+  }
+}
+
+.top-container {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .top {
+    .fa-github {
+      position: absolute;
+      left: 50%;
+      top: 9px;
+      font-size: 2em;
+      color: yellow;
+      animation-duration: 6s;
+      animation-name: gitFade;
+    }
+  }
+  .content {
+    display: flex;
+    min-height: 100%;
+    projects-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    bio-card {
+    }
+    fun-time-hobbies-card {
+      display: flex;
+    }
+  }
+}
+
+.container {
+  position: relative;
+  min-height: 100%;
+}
+
+@keyframes gitFade {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

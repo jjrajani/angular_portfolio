@@ -1,0 +1,39 @@
+fun-time-hobbies-card {
+  font-family: $font;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  #hobbies {
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto auto;
+    padding: 20px 0;
+    background-color: rgba(100,100,100,0.7);
+    .hobby {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      h3 {
+        width: 100%;
+        margin: 0 0 0 5%;
+        border-bottom: solid 1px orange;
+      }
+      p {
+        font-family: $font;
+        line-height: 1.4em;
+        color: white;
+        justify-content: space-around;
+        margin: 10px auto 30px;
+        padding: 10px 5%;
+      }
+    }
+  }
+}

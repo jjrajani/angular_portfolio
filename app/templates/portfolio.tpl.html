@@ -1,0 +1,18 @@
+<div class="top">
+  <div class="title">Web Developer</div>
+  <a href="https://github.com/jjrajani"><i class="fa fa-github" aria-hidden="true"></i></a>
+  <languages-card></languages-card>
+  <div class="nav">
+    <i class="fa fa-arrow-left" aria-hidden="true" ng-click="vm.minusTab()"></i>
+    <p ng-show="vm.navTab === 1">Projects</p>
+    <p ng-show="vm.navTab === 2">Bio</p>
+    <p ng-show="vm.navTab === 3">Fun Time</p>
+    <a ng-click="vm.plusTab()"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<div class="content">
+  <projects-card ng-show="vm.navTab === 1"></projects-card>
+  <bio-card ng-show="vm.navTab === 2"></bio-card>
+  <fun-time-hobbies-card ng-show="vm.navTab === 3"></fun-time-hobbies-card>
+</div>

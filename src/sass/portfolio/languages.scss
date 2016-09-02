@@ -1,0 +1,82 @@
+.languages {
+  width: 100%;
+  background-color: rgba(225, 225, 225, 0.7);
+  animation-duration: 7s;
+  animation-name: languageSlide;
+  height: 60px;
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2px 0 0;
+    background-color: rgba(225, 225, 225, 0.7);
+    p {
+      font-family: $font;
+      margin: 3px 0;
+      padding: 3px 15px;
+      color: rgba(10, 10, 10, 0.5);
+      &:hover {
+        background-color: orange;
+        border-radius: 4px;
+        color: white;
+      }
+      &.active {
+        color: white;
+        background-color: orange;
+      }
+    }
+  }
+  .info {
+    background-color: #11aabb;
+    // background-color: rgba(225, 225, 225, 0.7);
+    display: flex;
+    justify-content: center;
+    margin: 3px 0 0;
+    p {
+      background-color: rgba(87, 87, 87, 1);
+      font-family: $font;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 3px 0;
+      padding: 3px 10%;
+      color: white;
+      letter-spacing: 0.16em;
+      font-weight: 300;
+      font-size: 0.8em;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .languages {
+    }
+    p { 
+    }
+  }
+}
+
+
+@keyframes languageSlide {
+  0% {
+    visibility: hidden;
+    // top: -1000px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  60% {
+    visibility: visible;
+    height: 0;
+    overflow: hidden;
+    // margin-right: 100%;
+    // top: -100px;
+  }
+  95% {
+    visibility: visible;
+    height: 60px;
+    overflow: hidden;
+    // margin-right: 100%;
+    // top: -100px;
+  }
+}

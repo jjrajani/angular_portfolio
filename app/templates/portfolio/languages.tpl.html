@@ -1,0 +1,33 @@
+<div class="languages" ng-click="vm.gomyGarden()">
+  <div class="list">
+    <p ng-click="vm.tab(1)" ng-class="{active: vm.currentTab === 1}">Git</p>
+    <p ng-click="vm.tab(2)" ng-class="{active: vm.currentTab === 2}">Gulp</p>
+    <p ng-click="vm.tab(3)" ng-class="{active: vm.currentTab === 3}">HTML</p>
+    <p ng-click="vm.tab(4)" ng-class="{active: vm.currentTab === 4}">CSS</p>
+    <p ng-click="vm.tab(5)" ng-class="{active: vm.currentTab === 5}">SASS</p>
+    <p ng-click="vm.tab(6)" ng-class="{active: vm.currentTab === 6}">JavaScript</p>
+    <p ng-click="vm.tab(7)" ng-class="{active: vm.currentTab === 7}">AngularJS</p>
+    <p ng-click="vm.tab(8)" ng-class="{active: vm.currentTab === 8}">jQuery</p>
+    <p ng-click="vm.tab(9)" ng-class="{active: vm.currentTab === 9}">AJAX</p>
+  </div>
+  
+  <div class="info">
+  <!-- Git Info -->
+    <p ng-show="vm.currentTab === 1">Experince using git and gitHub both coloboratively at The Iron Yard, and individually on my own projects.</p>
+  <!-- Gulp -->
+    <p ng-show="vm.currentTab === 2">Familiar and comfortable using gulp through the terminal.</p>
+  
+    <p ng-show="vm.currentTab === 3">Profficient in HTML</p>
+  
+    <p ng-show="vm.currentTab === 4">Novice approaching andvanced CSS skills</p>
+  
+    <p ng-show="vm.currentTab === 5">Novice SASS skills</p>
+  
+    <p ng-show="vm.currentTab === 6">Confident JavaScript developer. Novice to Advanced skills.</p>
+  
+    <p ng-show="vm.currentTab === 7">Works in AngularJS include myGarden, this portfolio and others.</p>
+    <p ng-show="vm.currentTab === 8">Confident with jQuery</p>
+    <p ng-show="vm.currentTab === 9">Comfortable with AJAX</p>
+
+  </div>
+</div>
