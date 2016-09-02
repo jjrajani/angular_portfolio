@@ -1,6 +1,3 @@
-[Portfolio](http://tiy-humdrum-jenna-rajani.surge.sh/#/)
-
-### My Portfolio
+### [My Portfolio](http://tiy-humdrum-jenna-rajani.surge.sh/#/)
 ---
 ##### An AngularJS application.
-##### Pure CSS (SASS) animations.
