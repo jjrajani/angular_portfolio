@@ -1,24 +1,19 @@
 div#projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px 0 10px;
+  padding: 0 5% 10px;
   max-height: 560px;
   overflow-x: scroll;
   .project {
     font-family: $font;
     border-radius: 4px;
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: center;
     width: 100%;
-    margin: 20px auto;
-    padding: 20px 0;
+    margin: 10px auto;
+    padding: 10px 0;
     background-color: rgba(100,100,100,0.7);
     &:first-child {
-      margin-top: 695px;
     }
     &:hover {
       box-shadow: 5px 5px 10px rgba(225, 225, 225, 0.3),
@@ -32,23 +27,25 @@ div#projects {
       justify-content: space-around;
       align-items: center;
       background-color: rgba(87, 87, 87, 1);
-      margin: 20px auto 60px;
-      padding: 20px 5%;
+      margin: 10px auto 30px;
+      padding: 10px 5%;
       border-top: solid 1px orange;
       border-bottom: solid 1px orange;
     }
     img {
-      width: 35%;
+      width: 30%;
       max-width: 225px;
-      margin: 0 2.5%;
+      margin: 20px 2.5%;
       border-radius: 4px;
+      box-shadow: 5px 5px 50px 1px rgba(140,140,140,0.5),
+                  -5px -5px 50px 1px rgba(140,140,140,0.5);
     }
     
     .spec{
       width: 55%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       margin: 0 2.5%;
       h5 {
