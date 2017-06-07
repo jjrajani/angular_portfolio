@@ -1,0 +1,66 @@
+#home {
+  .title-wrapper {
+    padding: 6vh 0 2vh 0;
+    .title {
+      text-align: right;
+      font-size: 3.8vh;
+      font-family: 'Oxygen', sans-serif;
+      color: lighten(black, 20%);
+      color: #701D5F;
+      &.one {
+
+      }
+      &.two {
+        margin: -0.6vh 0 0 0;
+        line-height: 3.5vh;
+      }
+    }
+  }
+  .blurb-wrapper {
+    font-weight: 400;
+    color: lighten(black, 35%);
+    padding-bottom: 3vh;
+    .blurb {
+      padding-bottom: 2vh;
+    }
+  }
+  .home-image {
+    img {
+      width: 100%;
+    }
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3vh;
+    .project {
+      width: 48%;
+      border-top: solid 1px lighten(black, 85%);
+      margin: 2vh 1% 0;
+      p {
+        margin: 1vh 5%;
+        font-size: 1.3vh;
+        &.title {
+          font-weight: 600;
+        }
+        &.language {
+          // text-align: right;
+        }
+      }
+      .screen-shot {
+        position: relative;
+        .laptop {
+          width: 90%;
+          margin: 0 10%;
+        }
+        .image {
+          position: absolute;
+          width: 64.25%;
+          top: 19%;
+          left: 22.9%;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

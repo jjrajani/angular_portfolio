@@ -1,0 +1,69 @@
+#resume {
+  .bold {
+    font-weight: bold;
+  }
+  .sub-header {
+    display: flex;
+    flex-direction: column;
+    a {
+      font-style: normal !important;
+      margin: 4vh 0;
+      padding: 0 !important;
+      color: #BC0097 !important;
+      i {
+        margin-right: 0.5vw;
+      }
+    }
+  }
+  .sub-nav {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: lighten(black, 50%);
+      margin: 0 0 1vh 2vw;
+      transition: opacity 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
+      &:focus {
+        color: #C90059;
+      }
+    }
+  }
+  .sub-content {
+    padding-bottom: 3vh !important;
+    .title {
+      font-size: 2.8vh;
+      padding: 1vh 0 2vh;
+    }
+    p {
+      color: lighten(black, 25%);
+    }
+  }
+  #skills {
+
+  }
+  #tech {
+
+  }
+  #education {
+    a {
+      color: #BC0097;
+      //lighten(#BC0097, 50%);
+      // margin: 0 0 1vh 2vw;
+      transition: opacity 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
+      &:focus {
+        color: #C90059;
+      }
+    }
+    p:nth-child(1n + 2) {
+      padding: 0.5vh 0;
+    }
+  }
+  #travels {
+    padding-bottom: 11vh !important;
+  }
+}
