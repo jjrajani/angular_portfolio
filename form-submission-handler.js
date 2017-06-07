@@ -46,33 +46,21 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   console.log('preventing');
   var data = getFormData();         // get the values submitted in the form
-  if( !validEmail(data.email) ) {   // if email is not valid show error
-    document.getElementById('email-invalid').style.display = 'block';
-    return false;
-  } else {
-    var url = event.target.action;  //
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    // xhr.withCredentials = true;
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onreadystatechange = function() {
-        console.log( xhr.status, xhr.statusText )
-        console.log(xhr.responseText);
-        document.getElementById('gform').style.display = 'none'; // hide form
-        document.getElementById('thankyou_message').style.display = 'block';
-        return;
-    };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
-        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
-    }).join('&')
-    xhr.send(encoded);
-  }
+  emailjs.send("gmail","email_template", data)
+  .then(
+    function(response) {
+      console.log("SUCCESS", response);
+    },
+    function(error) {
+      console.log("FAILED", error);
+    }
+  );
 }
 function loaded() {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
-  var form = document.getElementById('gform');
+  var form = document.getElementById('form');
   form.addEventListener("submit", handleFormSubmit, false);
 };
+emailjs.init("user_2YEmEoQVovBLBaU66Vm7R");
 document.addEventListener('DOMContentLoaded', loaded, false);
