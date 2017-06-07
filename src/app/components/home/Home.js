@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import './home.scss';
-const logo = require("../../assets/trythree.png");
+const logo = require("../../assets/lost-in-the-trees.png");
 const culturaLink = require("../../assets/culturalink.png");
 const ADP = require("../../assets/ADP.png");
 const mailChimp = require("../../assets/mail-chimp.png");
