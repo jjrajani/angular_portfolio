@@ -38,29 +38,30 @@ function getFormData() {
       }
     }
   });
-  console.log(data);
+  // console.log(data);
   return data;
 }
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
-  console.log('preventing');
   var data = getFormData();         // get the values submitted in the form
   emailjs.send("gmail","email_template", data)
   .then(
     function(response) {
-      console.log("SUCCESS", response);
+      // console.log("SUCCESS", response);
     },
     function(error) {
-      console.log("FAILED", error);
+      // console.log("FAILED", error);
     }
   );
 }
 function loaded() {
-  console.log('contact form submission handler loaded successfully');
+  // console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
   var form = document.getElementById('form');
-  form.addEventListener("submit", handleFormSubmit, false);
+  if (form) {
+    form.addEventListener("submit", handleFormSubmit, false);
+  }
 };
 emailjs.init("user_2YEmEoQVovBLBaU66Vm7R");
 document.addEventListener('DOMContentLoaded', loaded, false);
